@@ -7,11 +7,14 @@ plugins {
 
 android {
     namespace = "com.ubaya.todoapp"
-    compileSdk = 33
+    compileSdk = 34
+    buildFeatures {
+        viewBinding = true
+    }
 
     defaultConfig {
         applicationId = "com.ubaya.todoapp"
-        minSdk = 24
+        minSdk = 27
         targetSdk = 33
         versionCode = 1
         versionName = "1.0"
