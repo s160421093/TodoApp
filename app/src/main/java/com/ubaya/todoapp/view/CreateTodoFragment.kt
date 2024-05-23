@@ -29,7 +29,7 @@ class CreateTodoFragment : Fragment() {
         viewModel = ViewModelProvider(this).get(DetailTodoViewModel::class.java)
 
         binding.btnAdd.setOnClickListener {
-            val todo = Todo(
+            var todo = Todo(
                 binding.txtTitle.text.toString(),
                 binding.txtNotes.text.toString()
             )

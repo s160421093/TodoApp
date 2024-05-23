@@ -25,13 +25,13 @@
         android:visibility="visible" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fabAddTodo"
+        android:id="@+id/btnFab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_marginEnd="40dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="40dp"
         android:layout_marginBottom="40dp"
         android:clickable="true"
-        android:src="@drawable/ic_pencil"
-        android:contentDescription="@string/fab_content_description"/>
+        android:contentDescription="@string/fab_content_description"
+        android:src="@drawable/ic_pencil" />
 </FrameLayout>

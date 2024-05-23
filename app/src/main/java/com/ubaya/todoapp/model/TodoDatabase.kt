@@ -13,11 +13,11 @@ abstract class TodoDatabase:RoomDatabase() {
         @Volatile private var instance: TodoDatabase ?= null
         private val LOCK = Any()
 
-        fun buildDatabase(context: Context) =
+        fun buildDatabase(context:Context) =
             Room.databaseBuilder(
                 context.applicationContext,
                 TodoDatabase::class.java,
-                DB_NAME).build()
+                "newtododb").build()
         operator fun invoke(context:Context) {
             if(instance!=null) {
                 synchronized(LOCK) {

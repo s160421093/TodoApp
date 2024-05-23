@@ -34,7 +34,6 @@ class ListTodoViewModel(application: Application)
             loadingLD.postValue(false)
         }
     }
-
     fun clearTask(todo: Todo) {
         launch {
             val db = TodoDatabase.buildDatabase(

@@ -26,7 +26,7 @@ class TodoListFragment : Fragment() {
         binding.recViewTodo.layoutManager = LinearLayoutManager(context)
         binding.recViewTodo.adapter = todoListAdapter
 
-        binding.fabAddTodo.setOnClickListener {
+        binding.btnFab.setOnClickListener {
             val action = TodoListFragmentDirections.actionCreateToDo()
             Navigation.findNavController(it).navigate(action)
         }

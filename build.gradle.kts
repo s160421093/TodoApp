@@ -2,6 +2,7 @@
 buildscript {
     repositories {
         google()
+        mavenCentral() //untuk memastikan semua dependensi dapat ditemukan
     }
     dependencies {
         classpath ("androidx.navigation:navigation-safe-args-gradle-plugin:2.5.3")
